@@ -27,7 +27,7 @@ const Cart = () => {
     try {
       const stripe = await loadStripe('pk_test_51QWy4oKbfdpq6iwyL0m5Hdn9mQQViCaPykLvS61nLf488kaoIHTTIdMC52ny7vQh6K5N1ekWaoHQV2Pf6YSxxrWJ00muWDG1oY'); // Load stripe dynamically
 
-      const response = await fetch("http://localhost:5000/create-checkout-session", {
+      const response = await fetch("https://product-fetch-backend.onrender.com/create-checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
