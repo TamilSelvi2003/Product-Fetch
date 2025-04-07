@@ -1,0 +1,228 @@
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555555;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+  }
+  
+  .log-btn {
+ 
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .log-btn:hover {
+    background-color: rgb(216, 150, 27);
+  }
+  
+  .register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #888888;
+  }
+  
+  .register-link a {
+    color: orange;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  /* register page */
+  .register-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  /* label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+  } */
+ 
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #888888;
+  }
+  
+  .login-link a {
+    color: orange;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  /* Admin component */
+
+  .admin-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .table-btn {
+    padding:4px 8px ;
+    border: none;
+    border-radius: 4px;
+    background-color: orange;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    /* float: right; */
+    margin-top: -5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .table-btn:hover {
+    background-color: rgb(175, 118, 12);
+  }
+  /* home */
+
+.logout-btn, .admin-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover, .admin-btn:hover {
+  background-color: #0056b3;
+}
+
+  
+  .user-card h2, .guest-card h2 {
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .user-card .logout-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-card .logout-btn:hover {
+    background-color: orange;
+  }
+        
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .sidebar h2 {
+    /* text-align: center; */
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #555;
+  }
+  .admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+   
+  
+  .content {
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #f9f9f9;
+  }
+  

@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Login & Register Containers */
+  .login-container, .register-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Buttons */
+  .log-btn, .register-btn, .table-btn, .logout-btn, .admin-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  
+  .log-btn:hover, .register-btn:hover, .table-btn:hover, .logout-btn:hover, .admin-btn:hover {
+    background-color: rgb(216, 150, 27);
+  }
+  
+  /* Links */
+  .register-link, .login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+  }
+  
+  .register-link a, .login-link a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Admin Dashboard */
+  .admin-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .table-btn {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: orange;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .table-btn:hover {
+    background-color: rgb(175, 118, 12);
+  }
+  
+  /* Logout & Admin Buttons */
+  .logout-btn, .admin-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+  
+  .logout-btn:hover, .admin-btn:hover {
+    background-color: #0056b3;
+  }
+  

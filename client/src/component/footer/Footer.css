@@ -1,0 +1,162 @@
+.footer {
+  border-top: 1px solid #7c7474;
+  background: #000;
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 500px 700px;
+  width: 75%;
+  margin: 0 auto;
+  gap: 220px;
+  position: relative;
+}
+
+.form {
+  flex: 1;
+margin-left: -50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form-btn{
+  border: 1px solid #f39c12;
+  background-color: #333;
+  color: #fff;
+  width: 80px;
+padding: 10px;
+border-radius: 5px;
+
+}
+
+.form-btn:hover{
+  background-color: #f39c12;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form .one {
+  margin-bottom: 15px;
+}
+
+.form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f39c12;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form input, 
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #444;
+  color: #fff;
+}
+
+.form input:focus, 
+.form textarea:focus {
+  outline: 2px solid #f39c12;
+}
+
+.office {
+  flex: 2;
+}
+
+.office h4 {
+  font-size: 18px;
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.social-icons h4 {
+  margin-bottom: 10px;  
+}
+
+.icons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.icons-container svg {
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid #f39c12;
+  transition: all 0.3s ease;
+}
+
+.icons-container svg:hover {
+  color: #f39c12;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .office {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 220px;
+  }
+
+  .icons-container svg {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
