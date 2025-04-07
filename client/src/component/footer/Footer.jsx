@@ -19,7 +19,7 @@ const Footer = React.forwardRef((props, ref) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:5000/api/forms/submit", formData);
+            const response = await axios.post("https://product-fetch-backend.onrender.com/api/forms/submit", formData);
             setResponseMessage(response.data.message);
             setFormData({ name: "", email: "", message: "" });  
         } catch (error) {
