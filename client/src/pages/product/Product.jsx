@@ -14,7 +14,7 @@ const Product = () => {
     const navigate = useNavigate();
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:5000/api/products")
+        axios.get("https://product-fetch-backend.onrender.com/api/products")
             .then((response) => {
                 setProducts(response.data.slice(0, 6));  
             })
