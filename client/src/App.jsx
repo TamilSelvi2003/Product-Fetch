@@ -9,6 +9,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SingleProduct from "./pages/Single/SingleProduct";
 import CheckoutSuccess from "./pages/checkout/Checkout";
+import Chatbot from "./component/bot/Chatbot";
 
 const App = () => {
   const footerRef = useRef(null);
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/product/:id" element={<SingleProduct />} />
         <Route path="/sucess" element={<CheckoutSuccess />} />
       </Routes>
+      <Chatbot/>
       <Footer ref={footerRef} />
     </Router>
   );
