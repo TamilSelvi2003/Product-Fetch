@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { FaComments } from "react-icons/fa"; 
 import { AiOutlineSend } from 'react-icons/ai'; 
 
-const socket = io("http://localhost:5000"); 
+const socket = io("https://product-fetch-backend.onrender.com"); 
 
 const Chatbot = () => {
   const [message, setMessage] = useState("");
