@@ -17,7 +17,7 @@ const server = http.createServer(app);
 
 const io = socketIo(server, {
   cors: {
-    origin: "https://product-fetch-frontend.onrender.com/",   
+    origin: "https://product-fetch-frontend.onrender.com",   
     methods: ["GET", "POST"],
     credentials: true
   }
@@ -55,7 +55,7 @@ app.post("/create-checkout-session", async (req, res) => {
         quantity: item.quantity,
       })),
       mode: "payment",
-      success_url: "https://product-fetch-frontend.onrender.com//cart",
+      success_url: "https://product-fetch-frontend.onrender.com/cart",
       cancel_url: "https://product-fetch-frontend.onrender.com/cart",
     });
 
