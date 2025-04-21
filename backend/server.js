@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")(" STRIPE_SECRET_KEY ");
+const stripe = require("stripe")("sk_test_51QWy4oKbfdpq6iwySY7YdeGjQBLygk16h13R8lWF9i16XSAQtVEjw6YiCqp0rCeYo4x0CIFJVTOZC0OHIcxtfNiw00LvZGHGDk");
 const formRoutes = require("./routes/formRoutes");
 const productRoutes = require("./routes/productRoutes");
 const mongoose = require("mongoose");
