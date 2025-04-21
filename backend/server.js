@@ -23,6 +23,17 @@ const io = socketIo(server, {
   }
 });
 
+
+
+const corsOptions = {
+  origin: "https://product-fetch-frontend.onrender.com", // frontend origin
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true
+};
+
+app.use(cors(corsOptions));
+
+
 app.use(express.json());
 app.use(cors());
 
