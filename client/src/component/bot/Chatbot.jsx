@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
-import { FaComments } from "react-icons/fa"; 
-import { AiOutlineSend } from 'react-icons/ai'; 
+import { FaComments } from "react-icons/fa";
+import { AiOutlineSend, AiOutlineClose } from "react-icons/ai"; 
 
-const socket = io("https://product-fetch-backend.onrender.com"); 
+const socket = io("https://product-fetch-backend.onrender.com");
 
 const Chatbot = () => {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const [isOpen, setIsOpen] = useState(false);  
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     socket.on("botMessage", (response) => {
@@ -36,7 +36,6 @@ const Chatbot = () => {
 
   return (
     <>
- 
       <div
         style={{
           position: "fixed",
@@ -52,18 +51,17 @@ const Chatbot = () => {
             color: "#fff",
             border: "none",
             borderRadius: "50%",
-            width: "60px",
-            height: "60px",
-            fontSize: "24px",
+            width: "40px",
+            height: "40px",
+            fontSize: "19px",
             cursor: "pointer",
             boxShadow: "0px 0px 10px rgba(0,0,0,0.2)",
           }}
         >
-          <FaComments />
+          {isOpen ? <AiOutlineClose /> : <FaComments />} 
         </button>
       </div>
 
-      {/* Chat Window */}
       {isOpen && (
         <div
           style={{
@@ -158,7 +156,7 @@ const Chatbot = () => {
                 padding: "4px 10px",
               }}
             >
-               <AiOutlineSend size={13} />
+              <AiOutlineSend size={13} />
             </button>
           </div>
         </div>
